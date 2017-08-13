@@ -1,5 +1,6 @@
-
+#include <memory>
 #include <functional>
+#include <vector>
 
 using namespace std;
 
@@ -25,5 +26,8 @@ class FieldInfo: public FieldInfoBase
 
 class DataTable
 {
-    
+    public:
+        
+    private:
+       vector<sharted_ptr<FieldInfoBase>> field_info_list;
 };
